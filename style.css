@@ -4,21 +4,23 @@
 
 .first-container {
     display: flex;
-}
-.first-box {
-    flex: 50%;
+    color: #E7F6F2;
+    font-family: 'Oxygen', sans-serif;
 }
 .icon {
-    width: 32px;
     float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .second-container {
     padding: 10%;
-    background-color: brown;
+    background-color: #2C3333;
+    color: #FCF8E8;
+    font-family: 'Cormorant SC', serif;
 }
 .img-container {
-    width: 540px;
+    width: 480px;
     height: 360px;
     animation: fade 3s;
 }
@@ -30,22 +32,72 @@
 
 .third-container{
     padding: 5%;
-    background-color: aquamarine;
+    background-color: #411530;
     display: flex;
     justify-content: center;
+    color: #D1512D;
+    font-family: 'Bitter', serif;
 }
 .third-box{
     display: inline-block; 
     vertical-align: top;
     width: 25%;
-    background-color: hotpink;
+    background-color: #F5E8E4;
     padding: 5%;
-    min-height: 360px;
+    min-height: 400px;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 25px
 }
 .img-edu{
-    width: 197px;
+    width: 160px;
     height: 160px;
+    padding-bottom: 50px;
+}
+
+.big-box{
+    padding: 10px;
+}
+
+.small-box{
+    padding: 10px;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.card {
+    background-color: #395B64;
+    padding-left: 100px;
+    display: flex;
+    flex: 10%;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    float: right;
+}
+
+.mini-card {
+    padding-bottom: 6px;
+}
+
+i{
+    font-size: 60px;
+    padding-top: 10px;
+    padding: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #E7F6F2;;
+}
+
+a:hover{
+    color: black;
+}
+
+.third-box:hover {
+    background-color: #edbbac;
 }
