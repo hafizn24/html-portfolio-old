@@ -1,0 +1,27 @@
+* { 
+    margin: 0;
+}
+
+.first-class {
+    display: flex;
+}
+  
+.box {
+    flex: 50%;
+}
+
+.icon {
+    width: 32px;
+    float: left;
+}
+
+.img-container {
+    width: 540px;
+    height: 360px;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

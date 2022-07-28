@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--
+        THE FIRST HALF OF THE PAGE
+    -->
+    <div class="first-class">
+        <div class="box">
+            <h2>Muhammad Hafiz Bin Mohd Nasarudin</h2>
+            <div>
+                <img src="img/phone.png" alt="" class="icon">
+                <h3>017-2980206</h3>
+                <br>
+            </div>
+            <div>
+                <img src="img/email.png" alt="" class="icon">
+                <h3>hafizn24@gmail.com</h3>
+                <br>
+            </div>
+            <div> 
+                <img src="img/linkedin.png" alt="" class="icon">
+                <h3>https://www.linkedin.com/in/muhammad-hafiz-bin-mohd-nasarudin-7a73171ab</h3>
+                <br>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/hafiz.jpg" alt="image" width="640" height="640" align="right">
+        </div>
+    </div>
+    <!--
+        THE SECOND HALF OF THE PAGE
+    -->
+    <div class="second-class">
+        <center><h2>CERTIFICATES</h2></center>
+        <div class="container">
+            <div class="slide">
+                <center>
+                    <img class="img-container" src="img/azure.jpg" alt="">
+                    <h3>AZURE AI FUNDAMENTALS</h3>
+                </center>
+            </div>
+            <div class="slide">
+                <center>
+                    <img class="img-container" src="img/toolbox.jpg" alt="">
+                    <h3>THE DATA SCIENTIST'S TOOLBOX</h3>
+                </center>
+            </div>
+            <div class="slide">
+                <center>
+                    <img class="img-container" src="img/excel.jpg" alt="">
+                    <h3>INTRODUCTION TO DATA ANALYSIS USING EXCEL</h3>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var index = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slide");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }
+            
+            index++;
+
+            if (index > x.length) {
+                index = 1
+            } 
+            
+            x[index-1].style.display = "block"; 
+            setTimeout(carousel, 5000); 
+        }
+    </script>
+    <!--
+        THE FINAL PART OF THE PAGE
+    -->
+</body>
+</html>
