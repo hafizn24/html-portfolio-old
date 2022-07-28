@@ -2,19 +2,21 @@
     margin: 0;
 }
 
-.first-class {
+.first-container {
     display: flex;
 }
-  
-.box {
+.first-box {
     flex: 50%;
 }
-
 .icon {
     width: 32px;
     float: left;
 }
 
+.second-container {
+    padding: 10%;
+    background-color: brown;
+}
 .img-container {
     width: 540px;
     height: 360px;
@@ -25,3 +27,25 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+.third-container{
+    padding: 5%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+.third-box{
+    display: inline-block; 
+    vertical-align: top;
+    width: 25%;
+    background-color: hotpink;
+    padding: 5%;
+    min-height: 360px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px
+}
+.img-edu{
+    width: 197px;
+    height: 160px;
+}
